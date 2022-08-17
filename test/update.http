@@ -1,0 +1,7 @@
+PUT http://localhost:3001/api/todo/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "updated",
+  "completed": true
+}

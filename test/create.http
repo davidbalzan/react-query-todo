@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/todos HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "first todo",
+  "completed": false
+}
