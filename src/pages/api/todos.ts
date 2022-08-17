@@ -10,7 +10,11 @@ const todos = async (req: NextApiRequest, res: NextApiResponse) => {
   switch (method) {
     case "GET":
       const allTodos = await prisma.todo.findMany();
-      res.status(200).json(allTodos);
+      setTimeout(() => {
+        console.log("waiting");
+        res.status(200).json(allTodos);
+        console.log("done");
+      }, 1000);
       break;
     case "POST":
       //Create new todo
