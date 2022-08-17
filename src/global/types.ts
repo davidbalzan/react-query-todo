@@ -1,8 +1,8 @@
 export interface Todo {
-  id: number;
+  id: number | undefined;
   title: string;
   completed: boolean;
 }
 
 
-type Todos = Array<Todo>
+export type Todos = Array<Todo>
